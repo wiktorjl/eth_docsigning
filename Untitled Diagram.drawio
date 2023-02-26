@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-26T21:41:27.363Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="Z7URD_2et5QDKRFno8fp" version="20.8.23" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-26T21:45:44.462Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="_d7aIPDpGf3gHlnMBBQq" version="20.8.23" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
     <mxGraphModel dx="1434" dy="714" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -48,6 +48,28 @@
         </mxCell>
         <mxCell id="keb1_0k_JxS5sGtwQxUf-111" value="Key/Value Database (i.e. Dynamo)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="750" y="160" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-112" value="User2" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-113" value="" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Network_watcher.svg;" vertex="1" parent="1">
+          <mxGeometry x="520" y="340" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-114" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="350" as="sourcePoint" />
+            <mxPoint x="520" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-115" value="Queue (i.e. celery)" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.queue_generic;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="262.5" width="50" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-116" value="Publish message that doc needs signing" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="keb1_0k_JxS5sGtwQxUf-107" target="keb1_0k_JxS5sGtwQxUf-115">
+          <mxGeometry x="0.3659" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="810" y="380" as="sourcePoint" />
+            <mxPoint x="860" y="330" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

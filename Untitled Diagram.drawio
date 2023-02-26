@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-26T21:45:44.462Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="_d7aIPDpGf3gHlnMBBQq" version="20.8.23" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-26T21:50:30.682Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="cixE3CvJFC1vElO6itRM" version="20.8.23" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
     <mxGraphModel dx="1434" dy="714" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -52,10 +52,10 @@
         <mxCell id="keb1_0k_JxS5sGtwQxUf-112" value="User2" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="40" y="240" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="keb1_0k_JxS5sGtwQxUf-113" value="" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Network_watcher.svg;" vertex="1" parent="1">
-          <mxGeometry x="520" y="340" width="50" height="50" as="geometry" />
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-113" value="Notification sender" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Network_watcher.svg;" vertex="1" parent="1">
+          <mxGeometry x="555" y="370" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="keb1_0k_JxS5sGtwQxUf-114" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-114" value="Dequeue" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="keb1_0k_JxS5sGtwQxUf-113" target="keb1_0k_JxS5sGtwQxUf-115">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="470" y="350" as="sourcePoint" />
             <mxPoint x="520" y="300" as="targetPoint" />
@@ -70,6 +70,66 @@
             <mxPoint x="860" y="330" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-119" value="Inform user there is a doc to be signed" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="keb1_0k_JxS5sGtwQxUf-113" target="keb1_0k_JxS5sGtwQxUf-112">
+          <mxGeometry x="0.081" y="10" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="490" as="sourcePoint" />
+            <mxPoint x="230" y="440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="400" />
+              <mxPoint x="170" y="350" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-120" value="Sign the doc" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="keb1_0k_JxS5sGtwQxUf-112" target="keb1_0k_JxS5sGtwQxUf-103">
+          <mxGeometry x="-0.0842" y="-22" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="310" as="sourcePoint" />
+            <mxPoint x="480" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="140" y="210" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-121" value="Blockchain" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=#ffffff;fontSize=12;spacingTop=3;image;image=img/lib/ibm/blockchain/blockchain.svg;" vertex="1" parent="1">
+          <mxGeometry x="395" y="277.5" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-122" value="Update the contract with Address-&amp;gt;Doc hash mapping" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=0.85;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="keb1_0k_JxS5sGtwQxUf-103" target="keb1_0k_JxS5sGtwQxUf-121">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="310" as="sourcePoint" />
+            <mxPoint x="480" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-123" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;" vertex="1" parent="1">
+          <mxGeometry x="110" y="100" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-124" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;" vertex="1" parent="1">
+          <mxGeometry x="320" y="89" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-125" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;" vertex="1" parent="1">
+          <mxGeometry x="490" y="89" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-126" value="4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;" vertex="1" parent="1">
+          <mxGeometry x="690" y="60" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-127" value="4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;" vertex="1" parent="1">
+          <mxGeometry x="710" y="151" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-128" value="5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;" vertex="1" parent="1">
+          <mxGeometry x="590" y="210" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-129" value="6" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;" vertex="1" parent="1">
+          <mxGeometry x="590" y="330" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-130" value="7" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;" vertex="1" parent="1">
+          <mxGeometry x="270" y="360" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-131" value="8" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;" vertex="1" parent="1">
+          <mxGeometry x="208" y="220" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="keb1_0k_JxS5sGtwQxUf-132" value="9" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;fontFamily=Tahoma;spacingBottom=4;spacingRight=2;strokeColor=#d3d3d3;" vertex="1" parent="1">
+          <mxGeometry x="403" y="250" width="20" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

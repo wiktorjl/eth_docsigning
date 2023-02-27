@@ -39,7 +39,7 @@ contract = w3.eth.contract(address=smart_contract_address, abi=abi)
 
 # Get the count of signatures before adding one
 sig_count = contract.functions.countSignatures().call()
-print("Count of signatures: " + sig_count)
+print("Count of signatures: " + str(sig_count))
 
 # Add a new signature
 call_function = contract.functions.addSignature("address_of_a_document").buildTransaction(
@@ -53,4 +53,4 @@ print(tx_receipt)
 
 # Get the count of signatures before adding one
 sig_count = contract.functions.countSignatures().call()
-print("Count of signatures: " + sig_count)
+print("Count of signatures: " + str(sig_count))
